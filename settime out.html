@@ -1,0 +1,22 @@
+<script>
+    function prom() {
+      return new promise((res,rej) =>{
+        setTimeout(() => {
+                if (a) {
+                    res("yes")
+                } else {
+                    rej("no")
+                }
+                
+            },4000)
+      })
+    }
+    //prom()
+    prom(true).then((result) => {
+        console.log(result)
+    }) .catch((err) =>{
+        consol.log(err)
+    })
+    
+  </script>
+  

@@ -1,0 +1,11 @@
+<script>
+  function prom() {
+    return new promise((res, rej) => {
+      fetch("https://jsonplaceholder.typicode.com/todos/1")
+        .then((response) => response.json())
+        .then((json) => console.log(json));
+    });
+  }
+  //prom()
+  console.log(prom());
+</script>
